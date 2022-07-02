@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "SequentialistBB";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2")
+      format("woff2"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff")
+      format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+.joke_heading{
+    margin-top: 7%;
+}
+.joke_bubble {
+  position: relative;
+  max-width: 30em;
+  font-family: SequentialistBB, cursive;
+  background-color: #fff;
+  padding: 1.125em 1.5em;
+  font-size: 1.25em;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+.joke_emoji {
+  width: 20px;
+}
+.joke_bubble::before {
+  content: "";
+  position: absolute;
+  font-family: SequentialistBB, cursive;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 1.5em;
+  border: 0.75rem solid transparent;
+  border-top: none;
+  border-bottom-color: #fff;
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+}
+.joke_div {
+  margin-top: 5%;
+}
+.joke_category {
+  font-family: SequentialistBB, cursive;
+  position: relative;
+  bottom: 35px;
+  left: 94px;
+}
+
+.load_moreBtn {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px #a5a5a5;
+  padding: 5px 26px 5px 26px;
+}
+
+@media only screen and (max-width: 900px){
+    .joke_div {
+        margin-top: 10%;
+      }
+      .joke_heading {
+        margin-top: 25%;
+      }
+.joke_bubble {
+    position: relative;
+    max-width: 30em;
+    font-family: SequentialistBB, cursive;
+    background-color: #fff;
+    padding: 1.125em 1.5em;
+    font-size: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+      0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  }
+  .joke_bubble::before {
+    content: "";
+    position: absolute;
+    font-family: SequentialistBB, cursive;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 1.5em;
+    border: 0.75rem solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .joke_heading {
+        margin-top: 15%;
+      }
+      .joke_div {
+        margin-top: 5%;
+      }
+}

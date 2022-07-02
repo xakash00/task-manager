@@ -1,0 +1,102 @@
+.header {
+  height: 200px;
+  width: 100%;
+  margin-top: 7%;
+
+}
+
+.card-container {
+  height: 300px;
+  width: 300px;
+  box-shadow: 0px 3px 50px #a5a5a5;
+}
+.task_btn {
+  border: none;
+  border-radius: 7px;
+  padding: 5px 26px 5px 26px;
+}
+.task_div {
+  width: 90%;
+  margin-left: 87px;
+  margin-top: 32px;
+}
+.card-wrapper {
+  width: 270px;
+  height: 200px;
+  box-shadow: 0px 0px 7px #a5a5a5;
+  display: flex;
+  border: none;
+  border-radius: 7px;
+  flex-direction: column;
+}
+
+.card-top {
+  width: 100%;
+  height: 2%;
+  border-radius: 7px;
+}
+.task_Manager_heading{
+    font-size: 35px;
+}
+.task-holder {
+  width: 100%;
+  height: 98%;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card-header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 246px;
+  height: max-content;
+  padding: 7px 24px !important;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task_description {
+  height: max-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 100px;
+}
+@media only screen and (max-width: 900px){
+  .card-wrapper {
+    width: 270px;
+    height: 200px;
+    box-shadow: 0px 0px 7px #a5a5a5;
+    display: flex;
+    border: none;
+    border-radius: 7px;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .task_div {
+    width: 79%;
+    margin-left: 51px;
+    margin-top: 32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .task_div {
+    width: 83%;
+    margin-left: 85px;
+    margin-top: 3px;
+  
+  }
+  .task_Manager_heading {
+    font-size: 35px;
+    margin-top: 16%;
+  }
+}

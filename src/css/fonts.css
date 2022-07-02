@@ -1,0 +1,41 @@
+.poppins_light{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+  }
+  .poppins_regular{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  .poppins_medium{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  .poppins_bold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  .poppins_extrabold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+  }
+  .poppins_semibold{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .roboto_light{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  .roboto_regular{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  .roboto_medium{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  .roboto_dark{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
