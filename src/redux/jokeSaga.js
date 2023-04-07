@@ -1,23 +1,19 @@
-import { call, put, takeEvery, takeLatest } from "redux-saga/effects";
+import { call, put, takeLatest } from "redux-saga/effects";
 
-import { REQUEST_API_DATA, FETCH_API_DATA, recieveApiData } from "./actions";
+import { GET_JOKES } from "./actions";
 import { fetchData } from "./api";
+import { LOADING, SET } from "./reducers/data";
 
-export function* fetchApiDataWorker(action) {
+function* getJokesWorker(action) {
   try {
-    const data = yield call(fetchData);
-    if (data.error === false) {
-      yield action.onSuccess(data);
-    console.log(data);
-
-    } else {
-      yield action.onError("Something went Wrong");
-    }
+    yield put({ type: LOADING });
+    const response = yield call(fetchData);
+    yield put({ type: SET, data: response.jokes });
   } catch (err) {
     console.log(err);
   }
 }
 
-export function* watchFetchApiDataWorker() {
-  yield takeLatest(REQUEST_API_DATA, fetchApiDataWorker);
+export function* watchGetJokesWorker() {
+  yield takeLatest(GET_JOKES, getJokesWorker);
 }

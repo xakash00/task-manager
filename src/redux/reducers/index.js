@@ -1,4 +1,4 @@
 import { combineReducers } from "redux";
-import data from "./data";
+import jokeReducer from "./data";
 
-export default combineReducers({ data });
+export default combineReducers({ jokeReducer });

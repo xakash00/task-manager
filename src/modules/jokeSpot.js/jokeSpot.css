@@ -12,14 +12,15 @@
 }
 .joke_bubble {
   position: relative;
-  max-width: 30em;
+  max-width: 100%;
   font-family: SequentialistBB, cursive;
   background-color: #fff;
   padding: 1.125em 1.5em;
-  font-size: 1.25em;
+  font-size: 15px;
   border-radius: 1rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
-    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  line-break: anywhere;
 }
 .joke_emoji {
   width: 20px;
@@ -36,6 +37,14 @@
   border-top: none;
   border-bottom-color: #fff;
   filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+}
+.load_more{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  color:#F77223;
+  font-size: 18px;
 }
 .joke_div {
   margin-top: 5%;
