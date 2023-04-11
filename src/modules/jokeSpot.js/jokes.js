@@ -5,7 +5,7 @@ import {  Spinner } from "reactstrap";
 import "./jokeSpot.css";
 import emoji from "../../assets/emoji.png";
 const Jokes = () => {
-  const data = useSelector((store) => store);console.log(data)
+  const data = useSelector((store) => store);
   const dispatch = useDispatch();
   const [offset, setOffset] = useState(5);
 const ref = useRef()
